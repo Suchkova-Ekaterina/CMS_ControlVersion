@@ -11,5 +11,5 @@
 #= require skim
 #= require_tree ../templates
 #= require_tree .
-
+#= require ckeditor/init
 $(document).foundation()

@@ -22,8 +22,10 @@ html class="no-js" lang="en"
     #root
       = render "navigation"
       = render "messages"
-
-      = yield
+      .row
+        .large-12.columns
+          =render "/pages/pages_right"
+          = yield
 
     = render "footer"
 

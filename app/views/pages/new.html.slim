@@ -1,0 +1,7 @@
+= javascript_include_tag Ckeditor.cdn_url
+.row
+ = simple_form_for page do |f|
+  =f.input :title
+  =f.input :body, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} }
+  =f.collection_radio_buttons :position, [['top_menu','top menu'], ['right_menu','right menu']], :first, :last
+  =f.submit
